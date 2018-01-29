@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="서울특별시"
+                android:textSize="30dp"
+                android:id="@+id/locationSi"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="중랑구 면목동"
+                android:textSize="30dp"
+                android:id="@+id/locationDong"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/rainy"
+            android:id="@+id/mainWeather"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/where"
+        android:text="어디"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_gravity="center"/>
+<LinearLayout
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="100"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="#88ffffff"
+    android:layout_marginBottom="20dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id = "@+id/S1"
+            android:background="#55ffffff"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text = "실시간"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:id = "@+id/notice"
+                android:onClick="onNotice"
+                android:clickable="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id = "@+id/S2"
+            android:background="#55ffffff"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text = "뭉게구룸"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:id = "@+id/ad"
+                android:onClick="onAd"
+                android:clickable="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id = "@+id/S3"
+            android:background="#55ffffff"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text = "내일날씨"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:id = "@+id/prediction"
+                android:onClick="onPrediction"
+                android:clickable="true"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bottom"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!--우리 앱 날씨정보와 기상청 날씨정보를 비교할 수 있게 해줄 토글버튼-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toggleButton"
+            android:src="@drawable/toggle"
+            android:layout_weight="1"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/info"
+            android:id = "@+id/inform"
+            android:onClick="onInform"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/home"
+            android:src = "@drawable/home"
+            android:layout_weight="1"
+            android:onClick="onHome"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/locationsetting"
+            android:src = "@drawable/write"
+            android:onClick="write"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="설정"
+            android:src = "@drawable/setting"
+            android:id = "@+id/appsetting"
+            android:layout_weight="1"
+            android:onClick="apSetting"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id = "@+id/jongro"
+        android:title = "종로"></item>
+    <item
+        android:id = "@+id/junggu"
+        android:title = "중구"></item>
+    <item
+        android:id = "@+id/yongsan"
+        android:title = "용산"></item>
+    <item
+        android:id = "@+id/dobong"
+        android:title = "도봉"></item>
+    <item
+        android:id = "@+id/gangbuk"
+        android:title = "강북"></item>
+    <item
+        android:id = "@+id/sungbuk"
+        android:title = "성북"></item>
+    <item
+        android:id = "@+id/nowon"
+        android:title = "노원"></item>
+    <item
+        android:id = "@+id/dongdeamun"
+        android:title = "동대문"></item>
+    <item
+        android:id = "@+id/jungrang"
+        android:title = "중랑"></item>
+    <item
+        android:id = "@+id/sungdong"
+        android:title = "성동"></item>
+    <item
+        android:id = "@+id/gwangjin"
+        android:title = "광진"></item>
+    <item
+        android:id = "@+id/gangdong"
+        android:title = "강동"></item>
+    <item
+        android:id = "@+id/songpa"
+        android:title = "송파"></item>
+    <item
+        android:id = "@+id/sucho"
+        android:title = "서초"></item>
+    <item
+        android:id = "@+id/gangnam"
+        android:title = "강남"></item>
+    <item
+        android:id = "@+id/dongjak"
+        android:title = "동작"></item>
+    <item
+        android:id = "@+id/gwanak"
+        android:title = "관악"></item>
+    <item
+        android:id = "@+id/gumchun"
+        android:title = "금천"></item>
+    <item
+        android:id = "@+id/gangsue"
+        android:title = "강서"></item>
+    <item
+        android:id = "@+id/yangchun"
+        android:title = "양천"></item>
+    <item
+        android:id = "@+id/yungdungpo"
+        android:title = "영등포"></item>
+    <item
+        android:id = "@+id/guro"
+        android:title = "구로"></item>
+    <item
+        android:id = "@+id/eunpyung"
+        android:title = "은평"></item>
+    <item
+        android:id = "@+id/mapo"
+        android:title = "마포"></item>
+    <item
+        android:id = "@+id/sudeamun"
+        android:title = "서대문"></item>
+
+</menu>

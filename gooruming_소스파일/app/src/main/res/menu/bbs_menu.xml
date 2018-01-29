@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id = "@+id/comeon"
+        android:title = "댓글보기"></item>
+    <item
+        android:id = "@+id/repl"
+        android:title = "댓글달기"></item>
+    <item
+        android:id = "@+id/delete"
+        android:title = "삭제"></item>
+
+    </menu>

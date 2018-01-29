@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id = "@+id/gangsue"
+        android:title = "강서"></item>
+    <item
+        android:id = "@+id/yangchun"
+        android:title = "양천"></item>
+    <item
+        android:id = "@+id/yungdungpo"
+        android:title = "영등포"></item>
+    <item
+        android:id = "@+id/guro"
+        android:title = "구로"></item>
+</menu>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="#44ffffff">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#1"
+                android:textSize="50dp"
+                android:textColor="#000000"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="아침 무지개는 \n비가 올 징조다"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+                <ImageView
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/rainbow"/>
+                </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="아침에는 태양이 동쪽에 있으므로\n 무지개는 서쪽하늘에 보인다.\n\n우리나라는 편서풍의 영향으로 시간이 지나면\n 서쪽 지역의 날씨가 동쪽에 나타난다.\n 즉, 서쪽에 물방울이 많이 있으므로 \n오후쯤엔 비가 올 것이라는 말이다."/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="#44ffffff">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#2"
+                    android:textSize="50dp"
+                    android:textColor="#000000"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="30dp"
+                        android:text="제비가 낮게 날면\n비가 온다."
+                        android:textStyle="bold"
+                        android:textColor="#ffffff" />
+                    <ImageView
+                        android:layout_marginLeft="50dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/bird"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="날씨가 흐려지면 습도가 높아진다.\n습도가 높아지면\n곤충들은 날개가 무거워져 잘 날지 못하며,\n비가 올 것을 직감하고 땅으로 내려온다.\n\n이때 제비는 땅으로 내려온 곤충들을\n먹기위해 낮게난다."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="#44ffffff">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#3"
+                    android:textSize="50dp"
+                    android:textColor="#000000"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="30dp"
+                        android:text="개미가 진을치면\n비가 온다."
+                        android:textStyle="bold"
+                        android:textColor="#ffffff" />
+                    <ImageView
+                        android:layout_marginLeft="50dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ant"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="개미가 한 줄로 바쁘게 왕래하는\n모습을 진을 친다고 하는데,\n알을 물고 풀숲으로 이동하는 경우가 많다.\n이는 개미가 대기의 습도나 기압의 변화로\n비가 올 것을 감지하고 개미집에 있는\n알이나 애벌래를 안전한 곳으로\n옮기는 것으로 비가 오지 않더라도\n구름이 끼는 경우가 많다."></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="#44ffffff">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#4"
+                    android:textSize="50dp"
+                    android:textColor="#000000"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="30dp"
+                        android:text="햇무리나 달무리가\n나타나면 비가온다."
+                        android:textStyle="bold"
+                        android:textColor="#ffffff" />
+                    <ImageView
+                        android:layout_marginLeft="50dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/moonbow"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="햇무리나 달무리는 높은 곳에서\n만들어지는 구름인 권층운이\n하늘을 전부 덮었을 때 나타난다.\n\n이 구름은 날씨를 나쁘게 하는\n저기압이 이동하기 전에 나타나는 경우가 많다.\n실제로 햇무리나 달무리 후에\n비오는 확률을 보통 60~60%정도다."></TextView>            </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

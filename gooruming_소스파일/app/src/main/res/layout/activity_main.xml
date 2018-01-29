@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainbg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="서울특별시"
+                android:textSize="30dp"
+                android:id="@+id/locationSi"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="30dp"
+                android:id="@+id/locationDong"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/rainy"
+            android:id="@+id/mainWeather"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="100"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/m_sunny"
+                android:id = "@+id/icon1"
+                android:onClick="onIcon1"
+                android:layout_marginLeft="230dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/m_snowy"
+                android:id = "@+id/icon7"
+                android:onClick="onIcon7"
+                android:layout_marginLeft="120dp"
+                />
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/m_snowy"
+                android:id = "@+id/icon2"
+                android:onClick="onIcon2"
+                android:layout_marginLeft="70dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/m_rainy"
+                android:id = "@+id/icon6"
+                android:onClick="onIcon6"
+                android:layout_marginLeft="50dp"
+                />
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/m_cloudy"
+                android:id = "@+id/icon0"
+                android:onClick="onIcon0"
+                android:layout_marginLeft="70dp"
+                />
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/m_rainy"
+                android:id = "@+id/icon3"
+                android:onClick="onIcon3"
+                android:layout_marginLeft="70dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/m_cloudy"
+                android:id = "@+id/icon5"
+                android:onClick="onIcon5"
+                android:layout_marginLeft="120dp"
+                />
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/m_cloudy"
+                android:id = "@+id/icon4"
+                android:onClick="onIcon4"
+                android:layout_marginLeft="70dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bottom"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!--우리 앱 날씨정보와 기상청 날씨정보를 비교할 수 있게 해줄 토글버튼-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toggleButton"
+            android:src="@drawable/toggle"
+            android:layout_weight="1"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/info"
+            android:id = "@+id/inform"
+            android:onClick="onInform"
+        />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/home"
+            android:src = "@drawable/home"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/locationsetting"
+            android:src = "@drawable/write"
+            android:onClick="write"
+            android:layout_weight="1"
+        />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="설정"
+            android:src = "@drawable/setting"
+            android:id = "@+id/appsetting"
+            android:onClick="apSetting"
+            android:layout_weight="1"
+        />
+
+    </LinearLayout>
+</LinearLayout>

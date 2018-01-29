@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id = "@+id/dongdeamun"
+        android:title = "동대문"></item>
+    <item
+        android:id = "@+id/jungrang"
+        android:title = "중랑"></item>
+    <item
+        android:id = "@+id/sungdong"
+        android:title = "성동"></item>
+    <item
+        android:id = "@+id/gwangjin"
+        android:title = "광진"></item>
+</menu>

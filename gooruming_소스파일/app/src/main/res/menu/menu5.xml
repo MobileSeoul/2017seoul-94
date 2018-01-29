@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id = "@+id/dongjak"
+        android:title = "동작"></item>
+    <item
+        android:id = "@+id/gwanak"
+        android:title = "관악"></item>
+    <item
+        android:id = "@+id/gumchun"
+        android:title = "금천"></item>
+</menu>

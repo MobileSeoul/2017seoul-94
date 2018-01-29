@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id = "@+id/jongro"
+        android:title = "종로"></item>
+    <item
+        android:id = "@+id/junggu"
+        android:title = "중구"></item>
+    <item
+        android:id = "@+id/yongsan"
+        android:title = "용산"></item>
+   
+</menu>

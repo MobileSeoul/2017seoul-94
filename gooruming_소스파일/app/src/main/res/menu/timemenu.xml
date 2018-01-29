@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id = "@+id/title"
+        android:title = "게시물 개수제한 설정"></item>
+    <item
+        android:id = "@+id/num10"
+        android:title = "10"></item>
+    <item
+        android:id = "@+id/num20"
+        android:title = "20"></item>
+    <item
+        android:id = "@+id/num30"
+        android:title = "30"></item>
+    <item
+        android:id = "@+id/num40"
+        android:title = "40"></item>
+    <item
+        android:id = "@+id/num50"
+        android:title = "50"></item>
+</menu>

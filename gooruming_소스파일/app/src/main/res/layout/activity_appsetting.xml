@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/locasetting"
+                android:onClick="locaSetting"
+                android:background="#55ffffff"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="지역설정"
+                    android:textSize="40dp"
+                    android:padding="10dp"
+                    android:layout_weight="3"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:id="@+id/sloca"
+                    android:text="--"
+                    android:padding="10dp"
+                    android:layout_weight="5"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="공지"
+                android:textSize="40dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="#bbffffff"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#55ffffff"
+                android:onClick="timelineSetting"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="타임라인 설정"
+                    android:padding="10dp"
+                    android:textSize="40dp"
+                    android:layout_weight="2"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:id="@+id/snum"
+                    android:text="--"
+                    android:padding="10dp"
+                    android:layout_weight="5"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="알림설정"
+                android:textSize="40dp"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:background="#bbffffff"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bottom"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!--우리 앱 날씨정보와 기상청 날씨정보를 비교할 수 있게 해줄 토글버튼-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toggleButton"
+            android:src="@drawable/toggle"
+            android:layout_weight="1"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/info"
+            android:id = "@+id/inform"
+            android:onClick="onInform"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/home"
+            android:src = "@drawable/home"
+            android:layout_weight="1"
+            android:onClick="onHome"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/locationsetting"
+            android:src = "@drawable/write"
+            android:onClick="write"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="설정"
+            android:src = "@drawable/setting"
+            android:id = "@+id/appsetting"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="서울특별시"
+                android:textSize="30dp"
+                android:id="@+id/locationSi"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="지역을 선택해주세요"
+                android:textSize="30dp"
+                android:id="@+id/locationDong"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/rainy"
+            android:id="@+id/mainWeather"/>
+
+    </LinearLayout>
+
+
+
+    >
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#88ffffff"
+        android:orientation="vertical"
+        android:layout_weight="100"
+        android:layout_marginBottom="20dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="실시간"
+                android:textSize="30dp"
+                android:background="#ddffffff"
+                android:clickable="true"
+                android:id="@+id/now"
+
+                android:onClick="mOnClick"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="뭉게구름"
+                android:textSize="30dp"
+                android:layout_marginLeft="15dp"
+                android:background="#55ffffff"
+                android:clickable="true"
+                android:id="@+id/future"
+                android:onClick="mOnClick"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="내일날씨"
+                android:textSize="30dp"
+                android:layout_marginLeft="15dp"
+                android:clickable="true"
+                android:background="#55ffffff"
+                android:id="@+id/cloud"
+                android:onClick="mOnClick"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="＜"
+                android:textSize="70dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_marginRight="50dp"
+                android:clickable="true"
+                android:id="@+id/before"
+                android:onClick="mOnClick"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="50dp"
+                android:id="@+id/wrWeather"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="＞"
+                android:textSize="70dp"
+                android:clickable="true"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:id="@+id/next"
+                android:onClick="mOnClick"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/pUpload"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="사진 업로드"
+            android:textSize="20dp"
+            android:onClick="mOnClick"
+            android:visibility="gone"></Button>
+        <ScrollView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/SelectedImage"/>
+
+                <EditText
+                    android:id="@+id/wr_content"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#77ffffff"
+                    android:layout_marginTop="10dp"
+                    android:hint="내용을 입력하세요"
+                    android:inputType="textMultiLine"
+                    android:lines="8"
+                    android:gravity="top"/>
+
+                <Button
+                    android:id="@+id/wrComplete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="완료"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:onClick="mOnClick"/>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bottom"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!--우리 앱 날씨정보와 기상청 날씨정보를 비교할 수 있게 해줄 토글버튼-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toggleButton"
+            android:src="@drawable/toggle"
+            android:layout_weight="1"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/info"
+            android:id = "@+id/inform"
+            android:onClick="mOnClick"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/home"
+            android:src = "@drawable/home"
+            android:layout_weight="1"
+            android:onClick="mOnClick"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/locationsetting"
+            android:src = "@drawable/write"
+            android:onClick="mOnClick"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="설정"
+            android:src = "@drawable/setting"
+            android:id = "@+id/appsetting"
+            android:layout_weight="1"
+            android:onClick="mOnClick"
+
+            />
+
+    </LinearLayout>
+</LinearLayout>
